@@ -1,0 +1,42 @@
+Total points: 10000000000
+Coordinate system accuracy: 1000000000
+
+Warning: Divided work on threads, but threads were given bigger tasks than usual.
+This may take longer.
+Doing parallel run.
+Running calculation...
+Allocating thread 0 with 833333333 points.
+Allocating thread 1 with 833333333 points.
+Allocating thread 2 with 833333333 points.
+Allocating thread 3 with 833333333 points.
+Allocating thread 4 with 833333333 points.
+Allocating thread 5 with 833333333 points.
+Allocating thread 6 with 833333333 points.
+Allocating thread 7 with 833333333 points.
+Allocating thread 8 with 833333333 points.
+Allocating thread 9 with 833333333 points.
+Allocating thread 10 with 833333333 points.
+Allocating thread 11 with 833333333 points.
+Waiting for threads to finish...
+Approx. Progress: 7.8431372549019605%
+Approx. Progress: 15.635345047109753%
+Approx. Progress: 23.682200152788386%
+Approx. Progress: 31.63992869875223%
+Approx. Progress: 39.61038961038961%
+Approx. Progress: 47.593582887700535%
+Approx. Progress: 55.513114336643746%
+Approx. Progress: 63.41991341991342%
+Approx. Progress: 71.37764196587726%
+Approx. Progress: 79.2462439521263%
+Approx. Progress: 86.8856633562516%
+Approx. Progress: 94.27043544690603%
+Approx. Progress: 99.96191131907308%
+ done.
+Runtime: 13080ms.
+
+=========================================
+Percentage of points inside circle: 78.53985355%
+Approximate value of Pi: 3.141594142
+=========================================
+Approx. Progress: 99.99981353450471%
+ 
