@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 public class CalculatePi {
-	public static final long MAX_THREAD_POINTS = 500000000;
+	public static final long MAX_THREAD_POINTS = 500_000_000;
 	public static final double APPROX_PIC_PART = 0.7854;
 	public static volatile long pointsInsideCircleGlobal = 0;
 	
@@ -15,16 +15,16 @@ public class CalculatePi {
 	public static void main(String[] args) {
 		
 		// Configurable values
-		long totalPoints = 10000000000l;
-		long coordinateAccuracy = 1000000000;
+		long totalPoints = 40_000_000_000l;
+		long coordinateAccuracy = 200_000;
 		System.out.println("Total points: " + totalPoints);
 		System.out.println("Coordinate system accuracy: " + coordinateAccuracy + "\n");
 		
 		// Calculate values
-		double[] results = sequentialRun(totalPoints, coordinateAccuracy);
-		printResults(results);
+		//double[] results = sequentialRun(totalPoints, coordinateAccuracy);
+		//printResults(results);
 		
-		results = parallelRun(totalPoints, coordinateAccuracy);
+		double[] results = parallelRun(totalPoints, coordinateAccuracy);
 		printResults(results);
 	}
 	
@@ -118,7 +118,7 @@ public class CalculatePi {
 				long x;
 				long y;
 				long pointsInsideCircle = 0;
-				for (int j = 0; j < threadPoints; j++) {
+				for (long j = 0; j < threadPoints; j++) {
 					x = ThreadLocalRandom.current().nextLong(1, coordinateAccuracy + 1) + 1;
 					y = ThreadLocalRandom.current().nextLong(1, coordinateAccuracy + 1) + 1;
 					

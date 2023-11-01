@@ -1,0 +1,21 @@
+Total points: 360,000,000,000
+Running new kernels on GPU...
+Estimated runtime (64 Bit Ubuntu 22.04 + Nvidia RTX 3060): 8.28 seconds.
+WARNING: Aparapi is running on an untested OpenCL platform version: OpenCL 3.0 CUDA 12.3.68
+Adding kernel inCircle points together...
+Adding kernel coveredPoints together...
+Calculating results...
+Time spent [GPU]: 7484.504217ms
+
+=========================================================
+Total points given:.....................360,000,000,000
+Total points covered:...................360,000,000,000
+Total points in circle:.................282,743,896,795
+% of points covered (should be 100%):..~100.000%
+% of points inside circle:.............~78.540%
+----------------------------------------------------------
+Pi (calculated):........................3.141598853277778
+Pi (Java constant):.....................3.141592653589793
+Number of correct digits:...............6
+Last digit deviation:...................6
+========================================================= 
